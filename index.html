@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/all.min.css">  
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+<h1 class="animate__animated animate__shakeX animate__infinite">webb</h1>
+    <DIV class="container py-5">
+        <label class="my-2">product name</label>
+        <input class="form-control  mb-5 mt-2" id="productNameInput">
+        <label class="my-2">product price</label>
+        <input class="form-control mb-5 mt-2" id="productPriceInput">
+        <label class="my-2">product category</label>
+        <input class="form-control  mb-5 mt-2" id="productCategoryInput">
+        <label class="my-2">product description</label>
+        <textarea class="form-control  mb-5 mt-2" id="productDescInput" cols="5" rows="5"></textarea>
+        <button  class="btn btn-info" id="addOrUpdate">add product</button>
+    </DIV>
+    <div class="container w-50 py-5">
+        <input placeholder="search for product" id="search" onkeyup="searchProduct(this.value)" class="form-control">
+    </div>
+    <div class="container">
+        <table class="table text-center" id="tableOfResults">
+            <thead>
+                <tr>
+                    
+                    <th>product name</th>
+                    <th>product price</th>
+                    <th>product category</th>
+                    <th>product description</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+        <div id="no_results" class="text-center text-danger"></div>
+    </div>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/first.js"></script>
+</body>
+
+</html>

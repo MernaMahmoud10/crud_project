@@ -1,0 +1,13 @@
+#no_results
+{
+    font-size: large;
+    font-weight: 600;
+}
+.termSpan
+{
+    font-weight: 900;
+}
+button .btn
+{
+    cursor: pointer !important;
+}
